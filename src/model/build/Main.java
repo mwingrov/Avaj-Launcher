@@ -15,7 +15,7 @@ public class Main {
 
     private static WeatherTower weatherTower;
     private static List<Flyable> flyables = new ArrayList<Flyable>();
-    private static WriteToFile writr = new WriteToFile();
+    public static WriteToFile writr = new WriteToFile();
     public static void main(String args[])
     {
 
