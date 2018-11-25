@@ -2,6 +2,8 @@ package weather;
 
 import aircraft.Coordinates;
 
+import java.util.Random;
+
 public class WeatherProvider {
 
     private static WeatherProvider weatherProvider = null;
@@ -12,12 +14,16 @@ public class WeatherProvider {
     }
 
     public static WeatherProvider getProvider(){
+        if (weatherProvider.equals(null))
+            weatherProvider = new WeatherProvider();
         return weatherProvider;
     }
 
-    public static String[] getCurrentWeather(Coordinates coordinates){
+    public static String getCurrentWeather(Coordinates coordinates){
 
-        return weather;
+        int generateWeather = new Random().nextInt(weather.length);
+        String weatherBehavior = (weather[generateWeather]);
+        return weatherBehavior;
     }
 
 }
