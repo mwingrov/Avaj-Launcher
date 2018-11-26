@@ -22,19 +22,19 @@ public class Baloon extends Aircraft implements Flyable {
         {
             case "RAIN":
                 this.coordinates = new Coordinates(longitude, latitude, height - 5);
-                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Ahhh, it has been long since I had a good wash, pour on me thou Rain!");
+                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Now i don't have to wash for at week!");
                 break;
             case "SNOW":
                 this.coordinates = new Coordinates(longitude, latitude, height - 15);
-                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Oh my fucken God can it stop snowing already!");
+                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Oh my fucking God!!! Sooo much snow!!!");
                 break;
             case "FOG":
                 this.coordinates = new Coordinates(longitude, latitude, height - 3);
-                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): I can't see, I can't see..Oh my a Crash is coming! Damn you Fog.");
+                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): WTF?! Sooo much Fog! I can't see..Oh my fucking God!!!");
                 break;
             case "SUN":
                 this.coordinates = new Coordinates(longitude, latitude, height + 4);
-                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Finally some Sun, Ulra violets bouncing on me. :)");
+                writr.writetofile("Baloon#" + this.name + "(" + this.id + "): Sunshine my only sunshine you make me happy when skies are Blue. :)");
                 break;
             default:
                 writr.writetofile("unknown weather: ");
